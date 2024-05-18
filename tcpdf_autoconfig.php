@@ -102,8 +102,8 @@ if (!defined('K_PATH_IMAGES')) {
 
 if (!defined('PDF_HEADER_LOGO')) {
 	$tcpdf_header_logo = '';
-	if (@file_exists(K_PATH_IMAGES.'tcpdf_logo.jpg')) {
-		$tcpdf_header_logo = 'tcpdf_logo.jpg';
+	if (@file_exists(K_PATH_IMAGES.'qsale1.jpg')) {
+		$tcpdf_header_logo = 'qsale1.jpg';
 	}
 	define ('PDF_HEADER_LOGO', $tcpdf_header_logo);
 }
@@ -112,7 +112,7 @@ if (!defined('PDF_HEADER_LOGO_WIDTH')) {
 	if (!empty($tcpdf_header_logo)) {
 		define ('PDF_HEADER_LOGO_WIDTH', 30);
 	} else {
-		define ('PDF_HEADER_LOGO_WIDTH', 0);
+		define ('PDF_HEADER_LOGO_WIDTH', 30);
 	}
 }
 
@@ -145,11 +145,11 @@ if (!defined('PDF_AUTHOR')) {
 }
 
 if (!defined('PDF_HEADER_TITLE')) {
-	define ('PDF_HEADER_TITLE', 'TCPDF Example');
+	define ('PDF_HEADER_TITLE', 'ABC Systems (Pvt) Ltd.');
 }
 
 if (!defined('PDF_HEADER_STRING')) {
-	define ('PDF_HEADER_STRING', "by Nicola Asuni - Tecnick.com\nwww.tcpdf.org");
+	define ('PDF_HEADER_STRING', "by ABC Systems ");
 }
 
 if (!defined('PDF_UNIT')) {
